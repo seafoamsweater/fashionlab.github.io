@@ -1,0 +1,514 @@
+*, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    opacity: 0%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DDDDDD;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0A0A0A;
+}
+
+header {
+    height: 85px;
+    width: 100%;
+    background-color: #0A0A0A;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header__container {
+    max-width: 1100px;
+    padding: 30px 25px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+
+.header__list:last-child {
+    display: none;
+}
+
+.header__li {
+    list-style-type: none;
+}
+
+.header__link {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DDDDDD;
+}
+
+.header__link:hover {
+    color: #C2000B;
+    transition-duration: 0.3s;
+}
+
+.header__burger {
+    color: #DDDDDD;
+    display: none;
+    cursor: pointer;
+}
+
+.header__burger:hover {
+    color: #C2000B;
+    transition-duration: 0.3s;
+}
+
+.underheader {
+    width: 100%;
+    background-color: #DDDDDD;;
+}
+
+.underheader__container {
+    max-width: 1100px;
+    padding: 3px 25px;
+    margin: 0 auto;
+}
+
+.underheader__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.underheader__p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:  #0A0A0A;
+}
+
+.underheader__a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:  #C2000B;
+}
+
+.banner {
+    width: 100%;
+    background-image: url(../img/IMG.jpg);
+    background-size: 100%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+}
+
+.banner__container {
+    max-width: 1100px;
+    padding: 24px 25px;
+    margin: 0 auto;
+}
+
+.banner__wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1050px;
+    justify-content: space-between;
+}
+
+.banner__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 110px;
+    color: #ffffff;
+}
+
+.banner__p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 760px;
+    color: #ffffff;
+}
+
+.main {
+    padding: 50px 0px;
+}
+
+.main__container {
+    max-width: 1100px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.main__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__card {
+    flex: 1;
+    margin-right: 25px;
+}
+
+.main__card:last-child {
+    margin: 0;
+}
+
+.main__image {
+    height: 250px;
+}
+
+.main__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__pcards {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.main__pcards:last-child {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.main__pcard {
+    flex: 1;
+    margin-right: 25px;
+}
+
+.main__pcard:last-child {
+    margin: 0;
+}
+
+.main__pimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 16px 0px;
+    color: #DDDDDD;
+}
+
+.main__p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DDDDDD;
+}
+
+.main__bcards {
+    margin-top: 50px;
+}
+
+.main__bcard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__bcard:first-child {
+    margin-bottom: 50px;
+}
+
+.main__bimage {
+    max-width: 688px;
+    max-height: 296px;
+}
+
+.delete {
+    display: none;
+} 
+
+.main__bimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__btxt {
+    max-width: 325px;
+}
+
+.main__btitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #DDDDDD;
+}
+
+.main__bp {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DDDDDD;
+}
+
+footer {
+    height: 85px;
+    background-color: #DDDDDD;
+}
+
+.footer__container {
+    max-width: 1100px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0A0A0A;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+}
+
+
+.footer__icon {
+    font-size: 30px;
+    line-height: 34px;
+    color: #0A0A0A;
+}
+
+.footer__icon:hover {
+    color: #C2000B;
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 1100px) {
+    .header__list:first-child {
+        display: none;
+    }
+
+    .header__list:last-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__nav {
+        display: none;
+        position: fixed;
+        background-color: #0A0A0A;
+        left: 0;
+        top: 85px;
+        width: 100%;
+        padding: 10px 16px;
+    }
+
+    .header__li {
+        margin-bottom: 16px;
+    }
+
+    .header__li:last-child {
+        margin-bottom: 0;
+    }
+
+    .header__link {
+        color: #DDDDDD;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__nav.active {
+        display: block;
+    }
+
+    .banner {
+        background-image: none;
+    }
+    
+    .banner__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__logo {
+        width: 50%;
+    }
+
+    .banner__txt {
+        text-align: center;
+    }
+
+    .main__bimage:first-child {
+        margin-right: 25px;
+    }
+
+    .main__bimage:last-child {
+        margin-right: 0px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .underheader {
+        height: 115px;
+    }
+
+    .underheader__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .underheader__a {
+        font-size: 18px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .underheader__p {
+        font-size: 16px;
+    }
+    
+    .main__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main__card {
+        max-width: 100%;
+        margin: 0;
+        padding: 25px 0px;
+    }
+
+    .main__txt {
+        text-align: center;
+    }
+
+    .main__image {
+        width: 100%;
+        max-width: none;
+        height: 250px;
+    }
+
+    .main__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main__bcard {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__btxt {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main__bimage:first-child {
+        margin-right: 0px;
+    }
+
+    .main__bimage:last-child {
+        display: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .main__bimage {
+        height: 160px;
+    }
+
+    .main__bimg {
+        object-fit: cover;
+    }
+
+    .delete {
+        display: block;
+    }
+
+    .main__btitle {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    
+    .footer__container {
+        padding: 16px;
+    }
+
+    .footer__p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 340px) {
+    .banner__title {
+        font-size: 80px;
+    }
+}
+
+
